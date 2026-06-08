@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3730c58a-7650-405c-81ec-86ac064f4a45" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/OverlayContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/OverlayContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0002.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0002.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0005.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0005.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0009.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0009.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0010.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0010.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0013.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0013.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0016.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0016.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0019.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0019.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0020.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0020.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0031.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0031.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0034.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0034.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0038.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0038.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0042.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0042.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0045.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0045.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0053.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0053.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0056.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0056.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0059.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0059.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0067.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0067.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0074.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0074.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0078.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0078.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0082.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0082.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0088.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0088.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0093.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0093.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0096.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0096.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0099.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0099.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0101.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0101.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0104.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0104.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0115.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0115.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0118.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0118.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0123.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0123.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0125.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0125.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0129.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0129.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0130.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0130.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0133.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0133.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0139.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0139.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0141.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0141.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0144.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0144.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0147.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0147.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0162.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0162.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0166.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0166.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0170.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0170.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0173.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0173.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0179.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0179.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0195.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0195.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0198.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0198.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0203.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0203.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0210.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0210.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0217.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0217.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0224.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0224.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0228.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0228.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0232.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0232.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0235.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0235.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frames/frame-0238.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/frames/frame-0238.webp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/YeahAyat/Desktop/DDCNB" value="3EqS3CUE2LZnHhPOhrIwNKkNlh5" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="498" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ayatyeah"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ayatyeah/DDCNB.git",
+    "accountId": "17f599b6-f07a-41ad-8657-788a390ccbb2"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3EqS3CUE2LZnHhPOhrIwNKkNlh5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/YeahAyat/Desktop/DDCNB",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3730c58a-7650-405c-81ec-86ac064f4a45" name="Changes" comment="" />
+      <created>1780904405560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780904405560</updated>
+      <workItem from="1780904406663" duration="435000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

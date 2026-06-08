@@ -37,6 +37,7 @@ const servicePoints = [
   {
     id: "systems",
     label: "Разработка систем",
+    shortLabel: "IT-системы",
     x: 58,
     y: 43,
     title: "Разработка и сопровождение IT-систем",
@@ -45,6 +46,7 @@ const servicePoints = [
   {
     id: "security",
     label: "ИБ",
+    shortLabel: "Инфобез",
     x: 69,
     y: 57,
     title: "Информационная безопасность",
@@ -53,6 +55,7 @@ const servicePoints = [
   {
     id: "support",
     label: "1477",
+    shortLabel: "Поддержка 1477",
     x: 48,
     y: 62,
     title: "Сервисная поддержка",
@@ -117,7 +120,8 @@ export function OverlayContent({ progress }: OverlayContentProps) {
             aria-label={point.label}
             onClick={() => setActivePoint(point.id)}
           >
-            <span />
+            <span className="hotspotDot" />
+            <span className="hotspotLabel">{point.shortLabel}</span>
           </button>
         ))}
 
@@ -129,7 +133,7 @@ export function OverlayContent({ progress }: OverlayContentProps) {
       </div>
 
       {scenes.map((scene) => {
-        const opacity = getOpacity(progress, scene.range[0], scene.range[1]) * (1 - hotspotOpacity * 0.75);
+        const opacity = getOpacity(progress, scene.range[0], scene.range[1]) * (1 - hotspotOpacity);
         const translate = (1 - opacity) * 28;
 
         return (
