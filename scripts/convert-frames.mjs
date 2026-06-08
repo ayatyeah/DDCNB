@@ -5,7 +5,7 @@ import sharp from "sharp";
 const root = process.cwd();
 const sourceDir = path.join(root, "images");
 const outputDir = path.join(root, "public", "frames");
-const quality = 84;
+const quality = 92;
 
 await fs.mkdir(outputDir, { recursive: true });
 
