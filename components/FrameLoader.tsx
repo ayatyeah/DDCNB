@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 type FrameLoaderProps = {
   frameCount: number;
+  sourceFrameCount?: number;
   batchSize?: number;
   basePath?: string;
   children: (state: {
@@ -15,18 +16,37 @@ type FrameLoaderProps = {
   }) => React.ReactNode;
 };
 
-const makeFrameSrc = (basePath: string, index: number) =>
-  `${basePath}/frame-${String(index + 1).padStart(4, "0")}.webp`;
+const makeFrameSrc = (basePath: string, sourceIndex: number) =>
+  `${basePath}/frame-${String(sourceIndex + 1).padStart(4, "0")}.webp`;
+
+const waitForIdle = () =>
+  new Promise<void>((resolve) => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => resolve(), { timeout: 90 });
+      return;
+    }
+
+    globalThis.setTimeout(resolve, 24);
+  });
 
 export function FrameLoader({
   frameCount,
+  sourceFrameCount = frameCount,
   batchSize = 8,
   basePath = "/frames",
   children,
 }: FrameLoaderProps) {
   const sources = useMemo(
-    () => Array.from({ length: frameCount }, (_, index) => makeFrameSrc(basePath, index)),
-    [basePath, frameCount],
+    () =>
+      Array.from({ length: frameCount }, (_, index) => {
+        const sourceIndex =
+          frameCount <= 1
+            ? 0
+            : Math.round((index * (sourceFrameCount - 1)) / (frameCount - 1));
+
+        return makeFrameSrc(basePath, sourceIndex);
+      }),
+    [basePath, frameCount, sourceFrameCount],
   );
   const [frames, setFrames] = useState<Array<HTMLImageElement | undefined>>([]);
   const [loadedCount, setLoadedCount] = useState(0);
@@ -40,6 +60,9 @@ export function FrameLoader({
       new Promise<void>((resolve) => {
         const image = new Image();
         image.decoding = "async";
+        if ("fetchPriority" in image) {
+          image.fetchPriority = index < batchSize ? "high" : "low";
+        }
         image.onload = () => {
           loadedFrames[index] = image;
           setLoadedCount((count) => count + 1);
@@ -59,6 +82,7 @@ export function FrameLoader({
         const batch = sources.slice(start, start + batchSize);
         await Promise.all(batch.map((src, offset) => loadImage(src, start + offset)));
         setFrames([...loadedFrames]);
+        await waitForIdle();
       }
 
       if (!cancelled.current) {

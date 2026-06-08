@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 
 type OverlayContentProps = {
   progress: number;
@@ -116,7 +116,7 @@ export function OverlayContent({ progress }: OverlayContentProps) {
             className={`hotspotButton ${point.id === activePoint ? "isActive" : ""}`}
             key={point.id}
             type="button"
-            style={{ left: `${point.x}%`, top: `${point.y}%` }}
+            style={{ "--x": `${point.x}%`, "--y": `${point.y}%` } as CSSProperties}
             aria-label={point.label}
             onClick={() => setActivePoint(point.id)}
           >

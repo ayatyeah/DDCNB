@@ -1,15 +1,35 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { CanvasRenderer } from "@/components/CanvasRenderer";
 import { FrameLoader } from "@/components/FrameLoader";
 import { OverlayContent } from "@/components/OverlayContent";
 import { ScrollController } from "@/components/ScrollController";
 
-const FRAME_COUNT = 240;
+const SOURCE_FRAME_COUNT = 240;
+
+function useFrameProfile() {
+  const [profile, setProfile] = useState({ batchSize: 4, frameCount: 140 });
+
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 700px)");
+
+    const update = () => {
+      setProfile(media.matches ? { batchSize: 3, frameCount: 96 } : { batchSize: 5, frameCount: 180 });
+    };
+
+    update();
+    media.addEventListener("change", update);
+
+    return () => media.removeEventListener("change", update);
+  }, []);
+
+  return profile;
+}
 
 export function ScrollAnimationSection() {
   const sectionRef = useRef<HTMLElement | null>(null);
+  const frameProfile = useFrameProfile();
   const [frameIndex, setFrameIndex] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -22,7 +42,11 @@ export function ScrollAnimationSection() {
   }, []);
 
   return (
-    <FrameLoader frameCount={FRAME_COUNT} batchSize={8}>
+    <FrameLoader
+      frameCount={frameProfile.frameCount}
+      sourceFrameCount={SOURCE_FRAME_COUNT}
+      batchSize={frameProfile.batchSize}
+    >
       {({ frames }) => (
         <main className="pageShell">
           <CanvasRenderer frames={frames} frameIndex={frameIndex} progress={scrollProgress} />
@@ -36,7 +60,7 @@ export function ScrollAnimationSection() {
             <ScrollController
               enabled
               animationEndProgress={0.58}
-              frameCount={FRAME_COUNT}
+              frameCount={frameProfile.frameCount}
               sectionRef={sectionRef}
               onFrameChange={handleFrameChange}
               onProgressChange={handleProgressChange}

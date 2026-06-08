@@ -345,6 +345,8 @@ select {
 
 .hotspotButton {
   position: absolute;
+  left: var(--x);
+  top: var(--y);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -469,6 +471,12 @@ select {
     mask-image: none;
   }
 
+  .canvasShade {
+    background:
+      linear-gradient(90deg, rgba(8, 10, 11, 0.62), rgba(8, 10, 11, 0.18) 48%, rgba(8, 10, 11, 0.58)),
+      linear-gradient(180deg, rgba(8, 10, 11, 0.34), rgba(8, 10, 11, 0.05) 36%, rgba(8, 10, 11, 0.74));
+  }
+
   .overlayContent {
     padding: 86px 18px 18px;
   }
@@ -512,6 +520,22 @@ select {
     height: 38px;
     max-width: 168px;
     padding: 0 11px 0 13px;
+    backdrop-filter: blur(8px);
+  }
+
+  .hotspotButton:nth-of-type(1) {
+    left: 50%;
+    top: 36%;
+  }
+
+  .hotspotButton:nth-of-type(2) {
+    left: 50%;
+    top: 45%;
+  }
+
+  .hotspotButton:nth-of-type(3) {
+    left: 50%;
+    top: 54%;
   }
 
   .hotspotLabel {
@@ -521,8 +545,12 @@ select {
   .hotspotCard {
     right: 18px;
     top: auto;
-    bottom: 122px;
+    bottom: 34px;
     padding: 18px;
+    width: calc(100vw - 36px);
+    max-height: 34vh;
+    overflow: auto;
+    backdrop-filter: blur(10px) saturate(125%);
   }
 
   .metricGrid {
