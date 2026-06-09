@@ -1,17 +1,18 @@
-# DDCNB Scroll Story
+# DDCNB Site
 
-Scroll-controlled product storytelling site for DDC. The page uses a fixed full-screen canvas background and renders a WebP frame sequence according to scroll progress.
+Clean Next.js site for АО «Центр цифрового развития».
 
-## Stack
+## What Is Inside
 
-- Next.js 16
-- React 19
-- TypeScript
-- CSS
-- HTML Canvas API
-- Sharp for local PNG to WebP frame conversion
+- `app/page.tsx` - full landing page, content, and scroll background shell
+- `components/FrameBackground.tsx` - fixed canvas renderer for the frame sequence
+- `app/globals.css` - full-screen background, nav, and responsive layout
+- `public/img/*` - scroll-controlled WebP frame sequence for the background
+- `public/people/*` - management and board portraits
 
-## Local Run
+The background is now driven by a fixed canvas and a 240-frame WebP sequence instead of a video file.
+
+## Run
 
 ```bash
 npm install
@@ -20,54 +21,9 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Production Build
+## Build
 
 ```bash
-npm ci
 npm run build
 npm start
 ```
-
-The production server listens on `0.0.0.0:3000`. Deployment platforms can provide a `PORT` environment variable; Next will use it.
-
-## Deploy
-
-The repository root contains:
-
-- `package.json` for Node/Next auto-detection
-- `Dockerfile` for Docker-based deployment fallback
-- `.do/app.yaml` for DigitalOcean App Platform
-- `public/frames/*.webp` with the prebuilt animation frames
-
-If the platform says "No components detected", make sure:
-
-1. The repository branch contains `package.json` in the repo root.
-2. The source directory is `/` or empty.
-3. The latest local changes are committed and pushed to `master`.
-4. The GitHub app has permission to read `ayatyeah/DDCNB`.
-5. If auto-detection still fails, choose Dockerfile deployment.
-
-Recommended commands:
-
-- Build command: `npm ci && npm run build`
-- Run command: `npm start`
-- HTTP port: `3000`
-
-## Frame Pipeline
-
-The runtime does not use a `<video>` element. Frames live in `public/frames`:
-
-```text
-frame-0001.webp
-frame-0002.webp
-...
-frame-0240.webp
-```
-
-To regenerate WebP frames from the local `images` folder:
-
-```bash
-npm run frames:webp
-```
-
-The script uses `sharp` and exports high-quality WebP frames.
